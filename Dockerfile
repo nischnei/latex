@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update && \
+    apt-get install -y git && \
     apt-get install -y lsb-release && \
     apt-get install -y curl && \
     apt-get install -y tzdata && \
